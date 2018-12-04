@@ -1,12 +1,12 @@
-# amr-evaluation
+# amr-evaluation-enhanced (this is a variant of https://github.com/mdtux89/amr-evaluation)
 
 Evaluation metrics to compare AMR graphs based on Smatch (http://amr.isi.edu/evaluation.html). The script computes a set of metrics between AMR graphs in addition to the traditional Smatch code:
 
-* Unlabeled: Smatch score computed on the predicted graphs after (canonicalizing direction and) removing all edge labels 
+* **Unlabeled**(differ): Smatch score computed on the predicted graphs after (canonicalizing direction and) removing all edge labels 
 * No WSD. Smatch score while ignoring Propbank senses (e.g., duck-01 vs duck-02)
 * Named Ent. F-score on the named entity recognition (:name roles)
-* Non_sense_frames. F-score on Propbank frame identification without sense (e.g. duck-00)
-* Frames. F-score on Propbank frame identification without sense (e.g. duck-01)
+* **Non_sense_frames**(new). F-score on Propbank frame identification without sense (e.g. duck-00) 
+* **Frames**(new). F-score on Propbank frame identification without sense (e.g. duck-01)
 * Wikification. F-score on the wikification (:wiki roles)
 * Negations. F-score on the negation detection (:polarity roles)
 * Concepts. F-score on the concept identification task
